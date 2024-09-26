@@ -1,42 +1,41 @@
-import java.util.Scanner;  // Tambahkan library Scanner di bagian atas
+import java.util.Scanner;  
 
-public class SIAKAD09 {  // Nama kelas
+public class SIAKAD09 { 
 
-    public static void main(String[] args) {  // Fungsi main()
-        // Deklarasi Scanner
+    public static void main(String[] args) {  
         Scanner sc = new Scanner(System.in);
 
-        // Deklarasi variabel
+        
         String nama;
         String nim;
         String kelas;
         int absen;
         double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
 
-        // Memasukkan data menggunakan Scanner
+        
         System.out.print("Masukkan Nama: ");
-        nama = sc.nextLine();  // Input untuk nama
+        nama = sc.nextLine(); 
 
         System.out.print("Masukkan NIM: ");
-        nim = sc.nextLine();  // Input untuk NIM
+        nim = sc.nextLine();  
 
         System.out.print("Masukkan Kelas: ");
-        kelas = sc.nextLine();  // Input untuk kelas
+        kelas = sc.nextLine(); 
 
         System.out.print("Masukkan Nomor Absen: ");
-        absen = sc.nextInt();  // Input untuk nomor absen
+        absen = sc.nextInt(); 
 
-        // Input nilai kuis, tugas, dan ujian
+     
         System.out.print("Masukkan Nilai Kuis: ");
-        nilaiKuis = sc.nextDouble();  // Input untuk nilai kuis
+        nilaiKuis = sc.nextDouble();  
 
         System.out.print("Masukkan Nilai Tugas: ");
-        nilaiTugas = sc.nextDouble();  // Input untuk nilai tugas
+        nilaiTugas = sc.nextDouble(); 
 
         System.out.print("Masukkan Nilai Ujian: ");
-        nilaiUjian = sc.nextDouble();  // Input untuk nilai ujian
+        nilaiUjian = sc.nextDouble();  
 
-        // Hitung nilai akhir
+    
         nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian) / 3;
 
         
@@ -84,10 +83,7 @@ public class SIAKAD09 {  // Nama kelas
         else {
             System.out.println("Invalid Number");
         }
-        // Menampilkan hasil
-        
-
-        // Tutup Scanner
+    
     
     }
 }
