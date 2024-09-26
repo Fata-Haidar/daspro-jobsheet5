@@ -1,36 +1,42 @@
-import java.util.Scanner;  
-public class SIAKAD09 {  
+import java.util.Scanner;  // Tambahkan library Scanner di bagian atas
 
-    public static void main(String[] args) {  
-       
+public class SIAKAD09 {  // Nama kelas
+
+    public static void main(String[] args) {  // Fungsi main()
+        // Deklarasi Scanner
         Scanner sc = new Scanner(System.in);
+
+        // Deklarasi variabel
         String nama;
         String nim;
         String kelas;
         int absen;
         double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
 
-        
+        // Memasukkan data menggunakan Scanner
         System.out.print("Masukkan Nama: ");
-        nama = sc.nextLine();  
+        nama = sc.nextLine();  // Input untuk nama
 
         System.out.print("Masukkan NIM: ");
-        nim = sc.nextLine();  
+        nim = sc.nextLine();  // Input untuk NIM
 
         System.out.print("Masukkan Kelas: ");
-        kelas = sc.nextLine();  
+        kelas = sc.nextLine();  // Input untuk kelas
 
         System.out.print("Masukkan Nomor Absen: ");
-        absen = sc.nextInt();  
+        absen = sc.nextInt();  // Input untuk nomor absen
+
+        // Input nilai kuis, tugas, dan ujian
         System.out.print("Masukkan Nilai Kuis: ");
-        nilaiKuis = sc.nextDouble();  
+        nilaiKuis = sc.nextDouble();  // Input untuk nilai kuis
 
         System.out.print("Masukkan Nilai Tugas: ");
-        nilaiTugas = sc.nextDouble(); 
+        nilaiTugas = sc.nextDouble();  // Input untuk nilai tugas
 
         System.out.print("Masukkan Nilai Ujian: ");
-        nilaiUjian = sc.nextDouble(); 
+        nilaiUjian = sc.nextDouble();  // Input untuk nilai ujian
 
+        // Hitung nilai akhir
         nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian) / 3;
 
         
@@ -78,7 +84,10 @@ public class SIAKAD09 {
         else {
             System.out.println("Invalid Number");
         }
+        // Menampilkan hasil
         
+
+        // Tutup Scanner
     
     }
 }
