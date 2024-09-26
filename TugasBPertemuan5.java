@@ -24,7 +24,7 @@ public class TugasBPertemuan5 {
                 }
             }
         } else {
-            System.out.println("Input tidak valid. Harap masukkan angka positif.");
+            System.out.println("Inputan tidak valid. Harap masukkan angka positif.");
         }
 
     }
